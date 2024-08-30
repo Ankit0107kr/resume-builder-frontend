@@ -13,7 +13,8 @@ function ATS() {
   useEffect(() => {
     async function fetchResumeData() {
       try {
-        const response = await axios.get("http://localhost:4000/api/resume");
+        // const response = await axios.get("http://localhost:4000/api/resume");
+        const response = await axios.get("https://resume-builder-backend-6yy0.onrender.com/api/resume");
         setResumeData(response.data);
         console.log("Resume data fetched:", response.data);
       } catch (error) {
